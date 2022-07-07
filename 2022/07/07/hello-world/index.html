@@ -50,6 +50,10 @@
   <nav class="site-navigation">
     <ul>
       
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/archives">Archives</a></li>
+      
     </ul>
   </nav>
 </header>
@@ -112,6 +116,25 @@
 </article>
 
   
+	<section id="comment" class="comment">
+		<div id="gitalk-container"></div>
+	</section>
+	<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+	<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+	<script>
+		var gitalk = new Gitalk({
+			clientID: '9d2b097b9879695c3f8f',
+			clientSecret: 'b2c86f46c4f02c44eca75001a8e1ab4ec60034be',
+			repo: 'https://github.com/timchenyh/timchenyh.github.io',
+			owner: 'timchenyh',
+			admin: ['timchenyh'],
+			id: location.pathname,
+			distractionFreeMode: false
+		})
+
+		gitalk.render('gitalk-container')
+	</script>
+
 
 
 
